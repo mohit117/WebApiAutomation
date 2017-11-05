@@ -19,22 +19,22 @@ public class DriverInstance {
 	{
 		if(Utility.fetchProperty("browserName").toString().equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "/.Drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 			driver = new ChromeDriver();			
 		}
 		else if(Utility.fetchProperty("browserName").toString().equalsIgnoreCase("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "/.Drivers/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 			driver = new FirefoxDriver();			
 		}
 		else if(Utility.fetchProperty("browserName").toString().equalsIgnoreCase("IE"))
 		{
-			System.setProperty("webdriver.ie.driver", "/.Drivers/internetexplorerdriver.exe");
+			System.setProperty("webdriver.ie.driver", "./Drivers/internetexplorerdriver.exe");
 			driver = new InternetExplorerDriver();			
 		}
 		else
 		{
-			System.setProperty("webdriver.chrome.driver", "/.Drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		

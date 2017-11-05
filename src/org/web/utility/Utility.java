@@ -16,4 +16,13 @@ public class Utility {
 		return prop.get(key);
 	}
 	
+	public static String fetchLocatorValue(String key) throws IOException
+	{
+		FileInputStream fis = new FileInputStream("./Config/elements.properties");
+		Properties prop = new Properties();
+		prop.load(fis);
+		
+		return prop.get(key).toString();
+	}
+	
 }
