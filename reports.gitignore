@@ -1,18 +1,19 @@
+#
 html files
 
 *.html
 
-log files
+#log files
 
 *.log
 
-png files
+#png files
 
 *.png
 
 #gif files
 *gif
 
-js files
+#js files
 
 *.js
