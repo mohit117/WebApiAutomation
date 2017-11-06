@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29016" started-at="2017-11-05T15:00:26Z" finished-at="2017-11-05T15:00:55Z">
+  <suite name="Default suite" duration-ms="39167" started-at="2017-11-06T07:01:50Z" finished-at="2017-11-06T07:02:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29016" started-at="2017-11-05T15:00:26Z" finished-at="2017-11-05T15:00:55Z">
+    <test name="Default test" duration-ms="39167" started-at="2017-11-06T07:01:50Z" finished-at="2017-11-06T07:02:29Z">
       <class name="org.web.testcases.Tc_001_Validate_LoginFunctionality">
-        <test-method status="PASS" signature="initiateDriverInstance()[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@4883b407]" name="initiateDriverInstance" is-config="true" duration-ms="6412" started-at="2017-11-05T20:30:26Z" finished-at="2017-11-05T20:30:33Z">
+        <test-method status="PASS" signature="initiateDriverInstance()[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@5622fdf]" name="initiateDriverInstance" is-config="true" duration-ms="9753" started-at="2017-11-06T12:31:51Z" finished-at="2017-11-06T12:32:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriverInstance -->
-        <test-method status="PASS" signature="tc_login_functionality(java.lang.String, java.lang.String)[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@4883b407]" name="tc_login_functionality" duration-ms="2453" started-at="2017-11-05T20:30:33Z" data-provider="datafromexcel" finished-at="2017-11-05T20:30:35Z">
+        <test-method status="PASS" signature="tc_login_functionality(java.lang.String, java.lang.String)[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@5622fdf]" name="tc_login_functionality" duration-ms="1306" started-at="2017-11-06T12:32:01Z" data-provider="dataforloginfromexcel" finished-at="2017-11-06T12:32:02Z">
           <params>
             <param index="0">
               <value>
@@ -27,15 +27,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_login_functionality -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@4883b407]" name="closeDriverInstance" is-config="true" duration-ms="1220" started-at="2017-11-05T20:30:35Z" finished-at="2017-11-05T20:30:37Z">
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@5622fdf]" name="closeDriverInstance" is-config="true" duration-ms="1721" started-at="2017-11-06T12:32:02Z" finished-at="2017-11-06T12:32:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="initiateDriverInstance()[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@4883b407]" name="initiateDriverInstance" is-config="true" duration-ms="5308" started-at="2017-11-05T20:30:37Z" finished-at="2017-11-05T20:30:42Z">
+        <test-method status="PASS" signature="initiateDriverInstance()[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@5622fdf]" name="initiateDriverInstance" is-config="true" duration-ms="7974" started-at="2017-11-06T12:32:04Z" finished-at="2017-11-06T12:32:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriverInstance -->
-        <test-method status="PASS" signature="tc_login_functionality(java.lang.String, java.lang.String)[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@4883b407]" name="tc_login_functionality" duration-ms="2378" started-at="2017-11-05T20:30:42Z" data-provider="datafromexcel" finished-at="2017-11-05T20:30:44Z">
+        <test-method status="PASS" signature="tc_login_functionality(java.lang.String, java.lang.String)[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@5622fdf]" name="tc_login_functionality" duration-ms="2505" started-at="2017-11-06T12:32:12Z" data-provider="dataforloginfromexcel" finished-at="2017-11-06T12:32:14Z">
           <params>
             <param index="0">
               <value>
@@ -51,15 +51,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_login_functionality -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@4883b407]" name="closeDriverInstance" is-config="true" duration-ms="1107" started-at="2017-11-05T20:30:44Z" finished-at="2017-11-05T20:30:45Z">
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@5622fdf]" name="closeDriverInstance" is-config="true" duration-ms="1661" started-at="2017-11-06T12:32:14Z" finished-at="2017-11-06T12:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="initiateDriverInstance()[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@4883b407]" name="initiateDriverInstance" is-config="true" duration-ms="5536" started-at="2017-11-05T20:30:45Z" finished-at="2017-11-05T20:30:51Z">
+        <test-method status="PASS" signature="initiateDriverInstance()[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@5622fdf]" name="initiateDriverInstance" is-config="true" duration-ms="9023" started-at="2017-11-06T12:32:16Z" finished-at="2017-11-06T12:32:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriverInstance -->
-        <test-method status="PASS" signature="tc_login_functionality(java.lang.String, java.lang.String)[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@4883b407]" name="tc_login_functionality" duration-ms="2899" started-at="2017-11-05T20:30:51Z" data-provider="datafromexcel" finished-at="2017-11-05T20:30:54Z">
+        <test-method status="PASS" signature="tc_login_functionality(java.lang.String, java.lang.String)[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@5622fdf]" name="tc_login_functionality" duration-ms="2676" started-at="2017-11-06T12:32:25Z" data-provider="dataforloginfromexcel" finished-at="2017-11-06T12:32:27Z">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_login_functionality -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@4883b407]" name="closeDriverInstance" is-config="true" duration-ms="1166" started-at="2017-11-05T20:30:54Z" finished-at="2017-11-05T20:30:55Z">
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:org.web.testcases.Tc_001_Validate_LoginFunctionality@5622fdf]" name="closeDriverInstance" is-config="true" duration-ms="2014" started-at="2017-11-06T12:32:27Z" finished-at="2017-11-06T12:32:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->

@@ -35,4 +35,22 @@ public class LoginPage {
 		
 	}
 	
+	public void enterFirstName(String firstname) throws Exception
+	{
+		
+		driver.findElement(By.xpath(Utility.fetchLocatorValue("login_first_name"))).sendKeys(firstname);
+	}
+	
+	public void enterLastName(String lastname) throws Exception
+	{
+		
+		driver.findElement(By.xpath(Utility.fetchLocatorValue("login_last_name"))).sendKeys(lastname);
+	}
+	
+	public void enterMobileNumber(String mobno) throws Exception
+	{
+		
+		driver.findElement(By.xpath(Utility.fetchLocatorValue("login_mob_number"))).sendKeys(mobno);
+	}
+	
 }
