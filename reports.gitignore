@@ -1,0 +1,18 @@
+html files
+
+*.html
+
+log files
+
+*.log
+
+png files
+
+*.png
+
+#gif files
+*gif
+
+js files
+
+*.js
