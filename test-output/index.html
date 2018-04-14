@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\mparma\AppData\Local\Temp\testng-eclipse--1756439782\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>D:\project_on_github\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,31 +91,95 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">14 methods, 2 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.api.testcases.DataProviderClass" hash-for-method="AnothertestToFail">AnothertestToFail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.api.testcases.DataProviderClass" hash-for-method="testToFail">testToFail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.web.testcases.Tc_001_Validate_LoginFunctionality" hash-for-method="tc_login_functionality(david, pass3)">tc_login_functionality(david, pass3)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.api.testcases.DataProviderClass" hash-for-method="getPPNames(jeans)">getPPNames(jeans)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.web.testcases.Tc_001_Validate_LoginFunctionality" hash-for-method="tc_login_functionality(john, pass1)">tc_login_functionality(john, pass1)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.api.testcases.DataProviderClass" hash-for-method="getPPNames(shirts)">getPPNames(shirts)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.web.testcases.Tc_001_Validate_LoginFunctionality" hash-for-method="tc_login_functionality(mohit, pass2)">tc_login_functionality(mohit, pass2)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.api.testcases.DataProviderClass" hash-for-method="getPPNames(pants)">getPPNames(pants)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.api.testcases.DataProviderClass" hash-for-method="getPPNames(sdsdfsdfsdfsdfsdfsdf)">getPPNames(sdsdfsdfsdfsdfsdfsdf)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.api.testcases.DataProviderClass" hash-for-method="hitSolrAPIwithDifferetData(jeans)">hitSolrAPIwithDifferetData(jeans)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.api.testcases.DataProviderClass" hash-for-method="hitSolrAPIwithDifferetData(shirts)">hitSolrAPIwithDifferetData(shirts)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.api.testcases.DataProviderClass" hash-for-method="hitSolrAPIwithDifferetData(pants)">hitSolrAPIwithDifferetData(pants)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.api.testcases.DataProviderClass" hash-for-method="hitSolrAPIwithDifferetData(sdsdfsdfsdfsdfsdfsdf)">hitSolrAPIwithDifferetData(sdsdfsdfsdfsdfsdfsdf)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.api.testcases.DataProviderClass" hash-for-method="validateStatusCode(shirts)">validateStatusCode(shirts)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.api.testcases.DataProviderClass" hash-for-method="validateStatusCode(jeans)">validateStatusCode(jeans)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.api.testcases.DataProviderClass" hash-for-method="validateStatusCode(sdsdfsdfsdfsdfsdfsdf)">validateStatusCode(sdsdfsdfsdfsdfsdfsdf)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.api.testcases.DataProviderClass" hash-for-method="validateStatusCode(pants)">validateStatusCode(pants)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -126,171 +190,374 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.web.testcases.Tc_001_Validate_LoginFunctionality</span>
+              <img src="failed.png"/>
+              <span class="class-name">org.api.testcases.DataProviderClass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_login_functionality(david, pass3)">
-                  </a> <!-- tc_login_functionality(david, pass3) -->
-                  <span class="method-name">tc_login_functionality</span>
-                  <span class="parameters">(david, pass3)</span>
+                  <a name="AnothertestToFail">
+                  </a> <!-- AnothertestToFail -->
+                  <span class="method-name">AnothertestToFail</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected content-type &quot;XML&quot; doesn&apos;t match actual content-type &quot;application/json;charset=utf-8&quot;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.contentType(ResponseSpecificationImpl.groovy:379)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.contentType(ValidatableResponseOptionsImpl.java:244)
+	at org.api.testcases.DataProviderClass.AnothertestToFail(DataProviderClass.java:130)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_login_functionality(john, pass1)">
-                  </a> <!-- tc_login_functionality(john, pass1) -->
-                  <span class="method-name">tc_login_functionality</span>
-                  <span class="parameters">(john, pass1)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_login_functionality(mohit, pass2)">
-                  </a> <!-- tc_login_functionality(mohit, pass2) -->
-                  <span class="method-name">tc_login_functionality</span>
-                  <span class="parameters">(mohit, pass2)</span>
+                  <a name="testToFail">
+                  </a> <!-- testToFail -->
+                  <span class="method-name">testToFail</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; doesn&apos;t match actual status code &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at org.api.testcases.DataProviderClass.testToFail(DataProviderClass.java:118)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.api.testcases.DataProviderClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPPNames(jeans)">
+                  </a> <!-- getPPNames(jeans) -->
+                  <span class="method-name">getPPNames</span>
+                  <span class="parameters">(jeans)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPPNames(shirts)">
+                  </a> <!-- getPPNames(shirts) -->
+                  <span class="method-name">getPPNames</span>
+                  <span class="parameters">(shirts)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPPNames(pants)">
+                  </a> <!-- getPPNames(pants) -->
+                  <span class="method-name">getPPNames</span>
+                  <span class="parameters">(pants)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPPNames(sdsdfsdfsdfsdfsdfsdf)">
+                  </a> <!-- getPPNames(sdsdfsdfsdfsdfsdfsdf) -->
+                  <span class="method-name">getPPNames</span>
+                  <span class="parameters">(sdsdfsdfsdfsdfsdfsdf)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hitSolrAPIwithDifferetData(jeans)">
+                  </a> <!-- hitSolrAPIwithDifferetData(jeans) -->
+                  <span class="method-name">hitSolrAPIwithDifferetData</span>
+                  <span class="parameters">(jeans)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hitSolrAPIwithDifferetData(shirts)">
+                  </a> <!-- hitSolrAPIwithDifferetData(shirts) -->
+                  <span class="method-name">hitSolrAPIwithDifferetData</span>
+                  <span class="parameters">(shirts)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hitSolrAPIwithDifferetData(pants)">
+                  </a> <!-- hitSolrAPIwithDifferetData(pants) -->
+                  <span class="method-name">hitSolrAPIwithDifferetData</span>
+                  <span class="parameters">(pants)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hitSolrAPIwithDifferetData(sdsdfsdfsdfsdfsdfsdf)">
+                  </a> <!-- hitSolrAPIwithDifferetData(sdsdfsdfsdfsdfsdfsdf) -->
+                  <span class="method-name">hitSolrAPIwithDifferetData</span>
+                  <span class="parameters">(sdsdfsdfsdfsdfsdfsdf)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateStatusCode(shirts)">
+                  </a> <!-- validateStatusCode(shirts) -->
+                  <span class="method-name">validateStatusCode</span>
+                  <span class="parameters">(shirts)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateStatusCode(jeans)">
+                  </a> <!-- validateStatusCode(jeans) -->
+                  <span class="method-name">validateStatusCode</span>
+                  <span class="parameters">(jeans)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateStatusCode(sdsdfsdfsdfsdfsdfsdf)">
+                  </a> <!-- validateStatusCode(sdsdfsdfsdfsdfsdfsdf) -->
+                  <span class="method-name">validateStatusCode</span>
+                  <span class="parameters">(sdsdfsdfsdfsdfsdfsdf)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateStatusCode(pants)">
+                  </a> <!-- validateStatusCode(pants) -->
+                  <span class="method-name">validateStatusCode</span>
+                  <span class="parameters">(pants)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\mparma\AppData\Local\Temp\testng-eclipse--1756439782\testng-customsuite.xml</span>
+            <span class="header-content">D:\project_on_github\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.api.base.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Validating SOLR Search APIs&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.web.testcases.Tc_001_Validate_LoginFunctionality&quot;/&gt;
+      &lt;class name=&quot;org.api.testcases.DataProviderClass&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Validating SOLR Search APIs --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Validating SOLR Search APIs (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tc_login_functionality')
-data.setCell(0, 2, 'org.web.testcases.Tc_001_Validate_LoginFunctionality')
-data.setCell(0, 3, 2676);
+data.setCell(0, 1, 'AnothertestToFail')
+data.setCell(0, 2, 'org.api.testcases.DataProviderClass')
+data.setCell(0, 3, 4000);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'tc_login_functionality')
-data.setCell(1, 2, 'org.web.testcases.Tc_001_Validate_LoginFunctionality')
-data.setCell(1, 3, 2505);
+data.setCell(1, 1, 'hitSolrAPIwithDifferetData')
+data.setCell(1, 2, 'org.api.testcases.DataProviderClass')
+data.setCell(1, 3, 3734);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'tc_login_functionality')
-data.setCell(2, 2, 'org.web.testcases.Tc_001_Validate_LoginFunctionality')
-data.setCell(2, 3, 1306);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(2, 1, 'getPPNames')
+data.setCell(2, 2, 'org.api.testcases.DataProviderClass')
+data.setCell(2, 3, 2499);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getPPNames')
+data.setCell(3, 2, 'org.api.testcases.DataProviderClass')
+data.setCell(3, 3, 2019);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'hitSolrAPIwithDifferetData')
+data.setCell(4, 2, 'org.api.testcases.DataProviderClass')
+data.setCell(4, 3, 1982);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getPPNames')
+data.setCell(5, 2, 'org.api.testcases.DataProviderClass')
+data.setCell(5, 3, 1836);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateStatusCode')
+data.setCell(6, 2, 'org.api.testcases.DataProviderClass')
+data.setCell(6, 3, 1819);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'hitSolrAPIwithDifferetData')
+data.setCell(7, 2, 'org.api.testcases.DataProviderClass')
+data.setCell(7, 3, 1790);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateStatusCode')
+data.setCell(8, 2, 'org.api.testcases.DataProviderClass')
+data.setCell(8, 3, 1788);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testToFail')
+data.setCell(9, 2, 'org.api.testcases.DataProviderClass')
+data.setCell(9, 3, 1751);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateStatusCode')
+data.setCell(10, 2, 'org.api.testcases.DataProviderClass')
+data.setCell(10, 3, 1724);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'getPPNames')
+data.setCell(11, 2, 'org.api.testcases.DataProviderClass')
+data.setCell(11, 3, 1551);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validateStatusCode')
+data.setCell(12, 2, 'org.api.testcases.DataProviderClass')
+data.setCell(12, 3, 1516);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'hitSolrAPIwithDifferetData')
+data.setCell(13, 2, 'org.api.testcases.DataProviderClass')
+data.setCell(13, 3, 1502);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.web.testcases.Tc_001_Validate_LoginFunctionality</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initiateDriverInstance</span>
+              <div class="chronological-class-name">org.api.testcases.DataProviderClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AnothertestToFail</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">tc_login_functionality(john, pass1)</span>
-                <span class="method-start">9753 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeDriverInstance</span>
-                <span class="method-start">11060 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initiateDriverInstance</span>
-                <span class="method-start">12781 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">tc_login_functionality(mohit, pass2)</span>
-                <span class="method-start">20755 ms</span>
+                <span class="method-name">getPPNames(pants)</span>
+                <span class="method-start">4005 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeDriverInstance</span>
-                <span class="method-start">23260 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initiateDriverInstance</span>
-                <span class="method-start">24921 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">tc_login_functionality(david, pass3)</span>
-                <span class="method-start">33944 ms</span>
+                <span class="method-name">getPPNames(shirts)</span>
+                <span class="method-start">6506 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeDriverInstance</span>
-                <span class="method-start">36621 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">getPPNames(jeans)</span>
+                <span class="method-start">8527 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getPPNames(sdsdfsdfsdfsdfsdfsdf)</span>
+                <span class="method-start">10366 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hitSolrAPIwithDifferetData(pants)</span>
+                <span class="method-start">11922 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hitSolrAPIwithDifferetData(shirts)</span>
+                <span class="method-start">13921 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hitSolrAPIwithDifferetData(jeans)</span>
+                <span class="method-start">17657 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hitSolrAPIwithDifferetData(sdsdfsdfsdfsdfsdfsdf)</span>
+                <span class="method-start">19450 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testToFail</span>
+                <span class="method-start">20955 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateStatusCode(pants)</span>
+                <span class="method-start">22711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateStatusCode(shirts)</span>
+                <span class="method-start">24501 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateStatusCode(jeans)</span>
+                <span class="method-start">26227 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateStatusCode(sdsdfsdfsdfsdfsdfsdf)</span>
+                <span class="method-start">28049 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

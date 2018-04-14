@@ -8,6 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.web.assertions.Compare;
 import org.web.utility.Utility;
 
 public class DriverInstance {
@@ -39,6 +40,8 @@ public class DriverInstance {
 		}
 		
 		driver.get(Utility.fetchProperty("applicationUrl").toString());
+		
+				
 	}
 
 	@AfterMethod

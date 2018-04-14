@@ -5,8 +5,10 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.web.utility.Utility;
+import org.web.assertions.Compare;
+import org.web.base.DriverInstance;
 
-public class LoginPage {
+public class LoginPage extends DriverInstance{
 	
 	WebDriver driver;
 
@@ -16,9 +18,11 @@ public class LoginPage {
 		this.driver = driver;
 	}
 	
+	
+	
 	public void enterUsername(String uname) throws Exception
 	{
-		
+				
 		driver.findElement(By.id(Utility.fetchLocatorValue("login_username_id"))).sendKeys(uname);
 	}
 	

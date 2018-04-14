@@ -1,8 +1,9 @@
 package org.web.assertions;
 
 import org.openqa.selenium.WebDriver;
+import org.web.base.DriverInstance;
 
-public class Compare {
+public class Compare extends DriverInstance{
 
 	public static boolean validatePageUrl(WebDriver driver, String expUrl)
 	{

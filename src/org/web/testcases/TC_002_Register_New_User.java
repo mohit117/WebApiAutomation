@@ -1,6 +1,7 @@
 package org.web.testcases;
 
 import org.testng.annotations.Test;
+import org.web.assertions.Compare;
 import org.web.base.DriverInstance;
 import org.web.datagenerators.DataGenerator;
 import org.web.facebookpages.LoginPage;
@@ -25,12 +26,22 @@ public class TC_002_Register_New_User extends DriverInstance{
 	@Test(dataProvider="dataforregisterfromexcel", dataProviderClass=DataGenerator.class)
 	public void tc_register_new_user(String fname, String lname, String mnumber) throws Exception
 	{
-		LoginPage login = new LoginPage(driver);
-		login.enterFirstName(fname);
-		login.enterLastName(lname);
-		login.enterMobileNumber(mnumber);
-		
+		boolean flag = Compare.validatePageTitle(driver, "facebook - log in or sign up");
+		if(flag)
+		{		
+			LoginPage login = new LoginPage(driver);
+			login.enterFirstName(fname);
+			login.enterLastName(lname);
+			login.enterMobileNumber(mnumber);
+		}
+		else
+		{
+			System.out.println("Page title is not matching");
+		}
+			
 	}
 	
+	
+
 	
 }
