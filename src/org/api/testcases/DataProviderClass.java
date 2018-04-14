@@ -1,8 +1,13 @@
 package org.api.testcases;
 import static io.restassured.RestAssured.given;
 
+import java.io.FileInputStream;
 import java.util.List;
 
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Assert;
 import org.testng.annotations.*;
 
@@ -33,12 +38,53 @@ public class DataProviderClass {
 	}
 	
 	
+	@DataProvider(name="listofsearchTerms")
+	public static Object[][] testDataGeneratorForAPIFromExcel() throws Exception
+	{
+		FileInputStream fis = new FileInputStream("./TestData/TestData.xlsx");
+		
+		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+		XSSFSheet searchSheet = workbook.getSheet("searchTermList");
+		int noOfrows = searchSheet.getPhysicalNumberOfRows();
+		
+		Object [][] testdataforSearchTerms = new Object [noOfrows][1];
+		
+		for(int i=0; i<noOfrows; i++)
+		{
+			XSSFRow row = searchSheet.getRow(i);
+			XSSFCell term = row.getCell(0);
+			//XSSFCell password = row.getCell(1);
+			
+			testdataforSearchTerms[i][0] = term.getStringCellValue();
+			//testdata[i][1] = password.getStringCellValue();
+		}
+		
+		return testdataforSearchTerms;
+	}
+	
 	/*Below test will execute using test data provided by data provider and will print the response for all requests
 	 We are passing 3 values hence it will execute 3 times
 	 */
 	
 	@Test(dataProvider = "getData")
 	public void hitSolrAPIwithDifferetData(String searchTermFromDataProvider)
+	{
+		System.out.println("Getting response for " + searchTermFromDataProvider);
+		
+		String responseBody = given().
+				log().all().
+				pathParam("searchTerm", searchTermFromDataProvider).
+				queryParam("Ntt", searchTermFromDataProvider).									
+				when().
+				get("https://search-api.jcpenney.com/v1/s/{searchTerm}").
+				asString();
+		
+		System.out.println(responseBody);
+	}
+	
+	//*****NOT WORKING *******************Reading data from excel sheet for search terms
+	@Test(dataProvider = "listofsearchTerms")
+	public void hitSolrAPIwithDifferetDataFromExcelSheet(String searchTermFromDataProvider)
 	{
 		System.out.println("Getting response for " + searchTermFromDataProvider);
 		

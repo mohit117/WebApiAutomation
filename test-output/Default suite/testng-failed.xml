@@ -5,18 +5,9 @@
     <classes>
       <class name="org.api.testcases.DataProviderClass">
         <methods>
-          <include name="testToFail"/>
+          <include name="hitSolrAPIwithDifferetDataFromExcelSheet"/>
         </methods>
       </class> <!-- org.api.testcases.DataProviderClass -->
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="org.api.testcases.DataProviderClass">
-        <methods>
-          <include name="testToFail"/>
-        </methods>
-      </class> <!-- org.api.testcases.DataProviderClass -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
